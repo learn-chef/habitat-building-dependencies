@@ -4,21 +4,26 @@
 
 ## Build
 
-    > This is a Ruby application so it is not built. Ideally, you would run some tests. But this project does not have any yet.
-
-## Deploy
-
-    > The assumption is that you have git, Ruby, and ImageMagick installed on the system.
-
-    1. Clone this repository
-    2. Install ImageMagick
-    3. Run `bundle install`
+    $ Clone / Download this repository
+    $ Run `hab studio enter` witin the source directory
+    $ Invoke `build` from within the Habitat Studio
+    $ Run `hab pkg export docker learn-chef/habitatize` to export to a runnable Docker Image
+    $ Invoke `exit` to leave the Habitat Studio
 
 ## Run
 
-    $ rackup
+    $ run `docker run -p 8000:8000 learn-chef/habitatize`
 
 ## About
+
+This application can be run locally, outside of the Habitat package, if you:
+
+1. Install Ruby
+2. Install Imagemagick
+3. `$ gem install bundler`
+4. Clone / Download this repository
+5. Run `bundle install` from within the source directory
+6. Run `rackup` from within the source directory
 
 When you run the application through the command `rackup`, the `rackup` command will look for and load the `config.ru` in the current working directory. This file is the Rackup (The 'ru' stands for Rackup) configuration file.
 
