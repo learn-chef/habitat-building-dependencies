@@ -2,7 +2,10 @@
 
 "Habitatize Yourself" (tm) in this web application.
 
+
 ## Build
+
+Install Habitat and Docker https://www.habitat.sh/tutorials/download/ for your platform.
 
     $ Clone / Download this repository
     $ Run `hab studio enter` witin the source directory
